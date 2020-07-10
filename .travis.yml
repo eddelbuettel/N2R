@@ -16,4 +16,5 @@ after_success:
   - git config --global user.name "Evan Biederstedt"
   - git config --global user.email evan.biederstedt@gmail.com
   - git config --global --list
+  - Rscript -e "whoami::whoami()"
   - Rscript - e 'rhub::check_on_solaris("evan.biederstedt@gmail.com")'
