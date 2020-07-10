@@ -7,6 +7,9 @@ language: r
 ## no tests, coverage
 ## check as CRAN
 
+r_packages:
+  -rhub
+  
 script:
   - R CMD build . --compact-vignettes=gs+qpdf
   - R CMD check *tar.gz ## remove CRAN check --as-cran 
